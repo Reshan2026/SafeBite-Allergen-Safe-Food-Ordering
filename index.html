@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allergen-safe food ordering | SafeBite</title>
+<meta name="description" content="SafeBite: allergen-safe food ordering that makes allergen information unmistakable.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to main content</a>
+<header id="site-header"></header>
+<main id="main">
+
+<section class="hero"><div class="wrap hero-in"><div>
+<h1>Food You Love. Safety You Trust.</h1>
+<p class="lead">Order from local restaurants with allergens shown clearly on every dish. SafeBite blocks confirmed dangers and never calls a dish safe when the information is missing.</p>
+<form class="search" action="menu.html" method="get" role="search"><label class="sr" for="h-q" style="position:absolute;left:-999px">Search food and restaurants</label><input id="h-q" type="search" name="q" placeholder="Search food and restaurants"><button class="btn" type="submit">Search</button></form>
+<div class="cta"><a class="btn" href="menu.html">Explore Food</a><a class="btn btn-outline" href="profile.html">Set Allergy Profile</a></div>
+<p class="hero-note" id="hero-profile"></p></div>
+<img class="hero-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=75" alt="A fresh colourful grain bowl" onerror="SB.imgFail(this)"></div></section>
+<section class="section"><div class="wrap"><h2>Popular food categories</h2><div class="cats" id="cats"></div></div></section>
+<section class="section" style="padding-top:0"><div class="wrap"><div class="row" style="margin-bottom:14px"><h2>Featured restaurants</h2><a href="restaurants.html">See all restaurants</a></div><div class="grid" id="featured"></div></div></section>
+<section class="section" style="background:#fff"><div class="wrap"><h2>How SafeBite works</h2>
+<ol class="steps"><li><h3>Tell us your allergies</h3><p>Choose from nine common allergens. It is saved on your device.</p></li><li><h3>Every dish is checked</h3><p>Each menu item is compared with your profile as you browse.</p></li><li><h3>Dangerous items are blocked</h3><p>Confirmed matches cannot be added. Uncertain items ask you to review first.</p></li><li><h3>Check again before you pay</h3><p>Your cart is validated once more at checkout.</p></li></ol></div></section>
+<section class="section"><div class="wrap"><h2>What our safety labels mean</h2><div class="legend">
+<div class="lg-g"><h3>✔ Safe based on available information</h3><p>None of your allergens are in the verified ingredients. This is not a guarantee of zero risk.</p></div>
+<div class="lg-y"><h3>⚠ Caution</h3><p>The dish may contain an allergen from shared equipment, was changed, or has missing allergen information. You can review and decide.</p></div>
+<div class="lg-r"><h3>⛔ Danger</h3><p>The dish is confirmed to contain an allergen from your profile. It cannot be ordered.</p></div></div>
+<p class="notice warn" style="margin-top:20px">Missing information is never treated as safe. When data is unavailable, we show “Allergen information unavailable” and let you contact the restaurant.</p></div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/main.js"></script>
+<script src="js/allergy.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

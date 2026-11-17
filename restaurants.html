@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurants | SafeBite</title>
+<meta name="description" content="SafeBite: allergen-safe food ordering that makes allergen information unmistakable.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="restaurants">
+<a class="skip" href="#main">Skip to main content</a>
+<header id="site-header"></header>
+<main id="main">
+
+<div class="wrap page-head"><h1>Restaurants</h1><p class="muted">Each restaurant shows how reliable its allergen information is.</p>
+<form id="f-form" class="filters" onsubmit="return false"><label class="field">Search<input id="f-q" type="search" placeholder="Restaurant or cuisine"></label>
+<label class="field">Cuisine<select id="f-cuisine"><option value="">All cuisines</option></select></label>
+<label class="field">Delivery time<select id="f-time"><option value="0">Any</option><option value="25">Up to 25 min</option><option value="30">Up to 30 min</option><option value="40">Up to 40 min</option></select></label>
+<label class="check"><input type="checkbox" id="f-veg"> Vegetarian</label><label class="check"><input type="checkbox" id="f-vegan"> Vegan</label><button type="button" class="btn btn-ghost" id="f-reset">Reset</button></form>
+<p id="r-count" class="muted" aria-live="polite"></p><div class="grid" id="r-grid"></div></div>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/main.js"></script>
+<script src="js/allergy.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>

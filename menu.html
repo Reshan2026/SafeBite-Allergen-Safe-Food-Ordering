@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food menu | SafeBite</title>
+<meta name="description" content="SafeBite: allergen-safe food ordering that makes allergen information unmistakable.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="menu">
+<a class="skip" href="#main">Skip to main content</a>
+<header id="site-header"></header>
+<main id="main">
+
+<div class="wrap page-head"><h1 id="m-title">Food menu</h1><p class="muted" id="m-sub"></p><p id="m-note" class="notice ok" ></p>
+<div id="m-banner" class="notice warn" hidden>You have not set your allergy profile. <a href="profile.html">Set it now</a> to see personal safety labels.</div>
+<div class="toolbar"><label class="field">Search food or restaurant<input id="m-q" type="search" placeholder="Try “pizza” or “Spice Route”"></label>
+<label class="field">Restaurant<select id="m-r"><option value="">All restaurants</option></select></label><label class="check"><input type="checkbox" id="m-safe"> Show only dishes that look safe for me</label></div>
+<div class="catbar" id="m-cats" role="group" aria-label="Food categories"></div><p id="m-count" class="muted" aria-live="polite"></p><div class="grid" id="m-grid"></div></div>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/main.js"></script>
+<script src="js/allergy.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>
